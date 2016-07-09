@@ -2070,15 +2070,8 @@ p {
   .col-md-3 {
     width: 50%; }
 
-  .col-md-3 svg {
-    margin-top: 15px; }
-
-  .info_border_2 {
-    border-right: 0 !important;
-    border-bottom: 3px solid #ccc; }
-
-  .info_border_1 {
-    border-bottom: 3px solid #ccc; }
+  .footer_wrap .row2_margin {
+    margin: 6px 0 0 0 !important; }
 
   .hero_wrap h1 {
     font-size: 2em !important; }
@@ -2100,17 +2093,12 @@ p {
     width: 100%; }
 
   .footer_wrap .col-md-3 {
-    padding: 25px 0 30px !important; }
+    padding: 16px 0 0 0 !important;
+    margin: 0 !important; }
 
   .hero_wrap h1 {
     font-size: 1.8em !important; } }
 @media only screen and (max-width: 992px) {
-  .info_border_1,
-  .info_border_2,
-  .info_border_3 {
-    border-right: 0 !important;
-    border-bottom: 3px solid #ccc; }
-
   .home_project_title_card,
   .home_project_title_card:hover {
     width: 100% !important; }
@@ -2237,29 +2225,36 @@ p {
   margin-left: auto;
   margin-right: auto;
   padding: 0 0 50px 0;
+  margin-top: 160px !important;
   text-align: center; }
   .footer_wrap::after {
     clear: both;
     content: "";
     display: block; }
 
-.footer_svg {
-  position: relative;
-  margin-bottom: 19px;
-  transition: 0.24s ease-out; }
-
 .footer_wrap .col-md-3 {
-  padding: 45px 0 45px 0;
-  background: rgba(0, 0, 0, 0.1);
-  transition: 0.2s ease all;
-  -webkit-transition: 0.2s ease all;
-  -moz-transition: 0.2s ease all;
-  -o-transition: 0.2s ease all; }
-.footer_wrap .col-md-3:hover {
-  background: rgba(0, 0, 0, 0.16); }
+  padding: 0 3px 0 3px;
+  margin: -45px 0 0 0; }
+  .footer_wrap .col-md-3 .col-md-12 {
+    background: rgba(0, 0, 0, 0.1);
+    transition: 0.2s ease all;
+    padding: 56px 0 32px 0;
+    -webkit-transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -o-transition: 0.2s ease all; }
+    .footer_wrap .col-md-3 .col-md-12 .footer_info_link {
+      position: absolute;
+      background: #000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 45px;
+      line-height: 45px; }
+  .footer_wrap .col-md-3 .col-md-12:hover {
+    background: rgba(0, 0, 0, 0.16); }
 
 .footer_info_link {
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   text-transform: initial; }
@@ -2276,11 +2271,6 @@ p {
   position: relative;
   font-size: 0.8em;
   top: 40px; }
-
-.info_border_1,
-.info_border_2,
-.info_border_3 {
-  border-right: 3px solid #ccc; }
 
 .home_project_outer {
   height: 300px;
