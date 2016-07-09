@@ -29,7 +29,8 @@ body {
 a {
   background-color: transparent; }
   a:active, a:hover {
-    outline: 0; }
+    outline: 0;
+    cursor: pointer; }
 
 h1 {
   font-size: 2em;
@@ -2080,7 +2081,20 @@ p {
     border-bottom: 3px solid #ccc; }
 
   .hero_wrap h1 {
-    font-size: 2em !important; } }
+    font-size: 2em !important; }
+
+  .home_project_outer {
+    height: 260px !important; }
+
+  .home_project_outer:hover .home_project_title_card {
+    width: 44% !important;
+    cursor: pointer; }
+
+  .home_project_title_card {
+    width: 40% !important; }
+
+  .home_project_title_card:hover {
+    width: 44% !important; } }
 @media only screen and (max-width: 1000px) {
   .col-md-3 {
     width: 100%; }
@@ -2095,7 +2109,15 @@ p {
   .info_border_2,
   .info_border_3 {
     border-right: 0 !important;
-    border-bottom: 3px solid #ccc; } }
+    border-bottom: 3px solid #ccc; }
+
+  .home_project_title_card,
+  .home_project_title_card:hover {
+    width: 100% !important; }
+
+  .home_project_outer:hover .home_project_title_card {
+    width: 100% !important;
+    cursor: pointer; } }
 @media only screen and (max-width: 768px) {
   .navbar-left {
     position: absolute;
@@ -2128,7 +2150,10 @@ p {
 
   p {
     font-size: 1em;
-    line-height: 1.7em; } }
+    line-height: 1.7em; }
+
+  .home_project_outer {
+    height: 240px !important; } }
 /* ============================================ */
 /*                    Navbar                    */
 /* ============================================ */
@@ -2256,6 +2281,43 @@ p {
 .info_border_2,
 .info_border_3 {
   border-right: 3px solid #ccc; }
+
+.home_project_outer {
+  height: 300px;
+  background: #ccc;
+  padding: 0;
+  margin-bottom: 5px; }
+  .home_project_outer .overlay_tint_white {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0;
+    transition: 0.4s ease all;
+    -webkit-transition: 0.4s ease all;
+    -moz-transition: 0.4s ease all;
+    -o-transition: 0.4s ease all; }
+
+.home_project_outer:hover {
+  cursor: pointer; }
+  .home_project_outer:hover .home_project_title_card {
+    width: 38%;
+    cursor: pointer; }
+  .home_project_outer:hover .overlay_tint_white {
+    opacity: 0.3; }
+
+.home_project_title_card {
+  height: 100%;
+  width: 33.33333%;
+  background: #999;
+  transition: 0.24s ease-out;
+  -webkit-transition: 0.24s ease-out;
+  -moz-transition: 0.24s ease-out;
+  -o-transition: 0.24s ease-out; }
+
+.home_project_title_card:hover {
+  width: 38%;
+  cursor: pointer; }
 
 .hero_wrap {
   position: relative;
