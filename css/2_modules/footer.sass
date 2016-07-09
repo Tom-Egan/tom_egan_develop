@@ -5,16 +5,47 @@
 	width: 100%
 	position: relative
 	+outer-container
-	padding: 50px 0 50px 0
+	padding: 0 0 50px 0
 	text-align: center
+
+.footer_svg
+	position: relative
+	margin-bottom: 19px
+	transition: 0.24s ease-out
+
+.footer_wrap
+	.col-md-3
+		padding: 45px 0 45px 0
+		background: rgba(0,0,0,0.1)
+		transition: 0.2s ease all
+		-webkit-transition: 0.2s ease all
+		-moz-transition: 0.2s ease all
+		-o-transition: 0.2s ease all
+	.col-md-3:hover
+		background: rgba(0,0,0,0.16)
+
+
+// .footer_wrap
+// 	.col-md-3:hover
+// 		.footer_svg
+// 			fill: #fff
+// 			height: 36px
+// 			margin-bottom: 15px
+
+.footer_info_link
+	font-size: 1.3em
+	font-family: $title_font
+	font-weight: 400
+	text-transform: initial
 
 .footer__social
 	position: relative
 	clear: both
 	top: 40px
 
-.footer__social__icon
-	padding: 0 5px 0 5px
+	.footer_info_link
+		font-size: 1em
+		padding: 0 6px 0 6px
 
 .footer__copyright
 	position: relative
@@ -24,4 +55,5 @@
 .info_border_1,
 .info_border_2,
 .info_border_3
-	border-right: 1px solid #000
+	border-right: 3px solid #ccc
+		
