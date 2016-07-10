@@ -2092,12 +2092,14 @@ p {
   .col-md-3 {
     width: 100%; }
 
-  .footer_wrap .col-md-3 {
-    padding: 16px 0 0 0 !important;
-    margin: 0 !important; }
+  .footer_wrap {
+    margin-top: 140px !important; }
+    .footer_wrap .col-md-3 {
+      padding: 16px 0 0 0 !important;
+      margin: 0 !important; }
 
   .hero_wrap h1 {
-    font-size: 1.8em !important; } }
+    font-size: 1.65em !important; } }
 @media only screen and (max-width: 992px) {
   .home_project_title_card,
   .home_project_title_card:hover {
@@ -2113,25 +2115,24 @@ p {
     .navbar-left li a {
       background: red; }
     .navbar-left li a:hover {
-      background: white !important; }
+      background: white; }
 
   .tegan_nav {
     height: 60px !important;
     width: 100% !important; }
 
   .navbar-collapse {
-    margin-top: -1px !important;
+    margin-top: -1px;
     margin-bottom: -9px; }
 
   .float_right_full {
-    width: 100% !important;
-    float: none !important;
+    width: 100%;
+    float: none;
     padding-left: 0 !important;
-    margin-left: 0 !important; }
+    margin-left: 0; }
 
   .hero_wrap h1 {
-    font-size: 1.7em !important;
-    padding-top: 110px !important; }
+    padding-top: 110px; }
 
   h2 {
     font-size: 1.6em; }
@@ -2140,8 +2141,8 @@ p {
     font-size: 1em;
     line-height: 1.7em; }
 
-  .home_project_outer {
-    height: 240px !important; } }
+  .footer_wrap {
+    margin-top: 90px !important; } }
 /* ============================================ */
 /*                    Navbar                    */
 /* ============================================ */
@@ -2225,7 +2226,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   padding: 0 0 50px 0;
-  margin-top: 160px !important;
+  margin-top: 200px;
   text-align: center; }
   .footer_wrap::after {
     clear: both;
@@ -2244,7 +2245,7 @@ p {
     -o-transition: 0.2s ease all; }
     .footer_wrap .col-md-3 .col-md-12 .footer_info_link {
       position: absolute;
-      background: #000;
+      background: #999;
       left: 0;
       top: 0;
       width: 100%;
@@ -2276,7 +2277,7 @@ p {
   height: 300px;
   background: #ccc;
   padding: 0;
-  margin-bottom: 5px; }
+  margin-bottom: 6px; }
   .home_project_outer .overlay_tint_white {
     position: absolute;
     width: 100%;
@@ -2295,6 +2296,9 @@ p {
     cursor: pointer; }
   .home_project_outer:hover .overlay_tint_white {
     opacity: 0.3; }
+
+.home_project_outer:active .overlay_tint_white {
+  opacity: 0.65; }
 
 .home_project_title_card {
   height: 100%;
