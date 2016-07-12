@@ -10,12 +10,15 @@ a
 	text-transform: uppercase
 h2
 	font-size: 1.9em
+	margin-bottom: 40px
+h3
+	font-size: 1.35em
 
 // h4
 // 	font-size: 1.3em
 // 	font-family: $title_font
 // 	font-weight: 400
-// 	text-transform: initial
+// 	text-transform: initial 
 
 p
 	font-family: $body_font
@@ -46,3 +49,49 @@ p
 	margin-left: -150px
 	margin-top: 75px
 	z-index: 2
+.btn_primary
+	position: relative
+	min-width: 200px
+	height: 60px
+	transition: 0.3s ease all
+	-webkit-transition: 0.3s ease all
+	-moz-transition: 0.3s ease all
+	-o-transition: 0.3s ease all
+
+	a
+		position: absolute
+		left: 0
+		top: 0
+		height: 100%
+		width: 100%
+		text-align: center
+		line-height: 60px
+		text-decoration: none
+		padding-right: 10px
+		background: rgba(0,0,0,0)
+		transition: 0.3s ease all
+		-webkit-transition: 0.3s ease all
+		-moz-transition: 0.3s ease all
+		-o-transition: 0.3s ease all
+
+		&:before
+			content: ">"
+			opacity: 0
+			padding-right: 5px
+			transition: 0.3s ease all
+			-webkit-transition: 0.3s ease all
+			-moz-transition: 0.3s ease all
+			-o-transition: 0.3s ease all
+		&:hover
+			padding-right: 0
+			background: rgba(0,0,0,0.2)
+
+			&:before 
+				content: ">"
+				opacity: 1
+				padding-right: 5px
+	
+.btn_right
+	float: right
+	margin-top: -90px
+	margin-right: -15px

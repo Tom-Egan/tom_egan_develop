@@ -29,7 +29,8 @@ body {
 a {
   background-color: transparent; }
   a:active, a:hover {
-    outline: 0; }
+    outline: 0;
+    cursor: pointer; }
 
 h1 {
   font-size: 2em;
@@ -2013,7 +2014,11 @@ a {
   text-transform: uppercase; }
 
 h2 {
-  font-size: 1.9em; }
+  font-size: 1.9em;
+  margin-bottom: 40px; }
+
+h3 {
+  font-size: 1.35em; }
 
 p {
   font-family: "Noto Sans", sans-serif;
@@ -2056,6 +2061,50 @@ p {
   margin-top: 75px;
   z-index: 2; }
 
+.btn_primary {
+  position: relative;
+  min-width: 200px;
+  height: 60px;
+  transition: 0.3s ease all;
+  -webkit-transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all; }
+  .btn_primary a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+    text-decoration: none;
+    padding-right: 10px;
+    background: transparent;
+    transition: 0.3s ease all;
+    -webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all; }
+    .btn_primary a:before {
+      content: ">";
+      opacity: 0;
+      padding-right: 5px;
+      transition: 0.3s ease all;
+      -webkit-transition: 0.3s ease all;
+      -moz-transition: 0.3s ease all;
+      -o-transition: 0.3s ease all; }
+    .btn_primary a:hover {
+      padding-right: 0;
+      background: rgba(0, 0, 0, 0.2); }
+      .btn_primary a:hover:before {
+        content: ">";
+        opacity: 1;
+        padding-right: 5px; }
+
+.btn_right {
+  float: right;
+  margin-top: -90px;
+  margin-right: -15px; }
+
 /* ============================================ */
 /*                Media Queries                 */
 /* ============================================ */
@@ -2069,33 +2118,47 @@ p {
   .col-md-3 {
     width: 50%; }
 
-  .col-md-3 svg {
-    margin-top: 15px; }
-
-  .info_border_2 {
-    border-right: 0 !important;
-    border-bottom: 3px solid #ccc; }
-
-  .info_border_1 {
-    border-bottom: 3px solid #ccc; }
+  .footer_wrap .row2_margin {
+    margin: 6px 0 0 0 !important; }
 
   .hero_wrap h1 {
-    font-size: 2em !important; } }
+    font-size: 2em !important; }
+
+  .home_project_outer {
+    height: 260px !important; }
+
+  .home_project_outer:hover .home_project_title_card {
+    width: 44% !important;
+    cursor: pointer; }
+
+  .home_project_title_card {
+    width: 40% !important; }
+
+  .home_project_title_card:hover {
+    width: 44% !important; } }
 @media only screen and (max-width: 1000px) {
   .col-md-3 {
     width: 100%; }
 
-  .footer_wrap .col-md-3 {
-    padding: 25px 0 30px !important; }
+  .footer_wrap {
+    margin-top: 140px !important; }
+    .footer_wrap .col-md-3 {
+      padding: 16px 0 0 0 !important;
+      margin: 0 !important; }
 
   .hero_wrap h1 {
-    font-size: 1.8em !important; } }
+    font-size: 1.65em !important; } }
 @media only screen and (max-width: 992px) {
-  .info_border_1,
-  .info_border_2,
-  .info_border_3 {
-    border-right: 0 !important;
-    border-bottom: 3px solid #ccc; } }
+  .home_project_outer {
+    height: 240px !important; }
+
+  .home_project_title_card,
+  .home_project_title_card:hover {
+    width: 100% !important; }
+
+  .home_project_outer:hover .home_project_title_card {
+    width: 100% !important;
+    cursor: pointer; } }
 @media only screen and (max-width: 768px) {
   .navbar-left {
     position: absolute;
@@ -2103,32 +2166,40 @@ p {
     .navbar-left li a {
       background: red; }
     .navbar-left li a:hover {
-      background: white !important; }
+      background: white; }
 
   .tegan_nav {
     height: 60px !important;
     width: 100% !important; }
 
   .navbar-collapse {
-    margin-top: -1px !important;
+    margin-top: -1px;
     margin-bottom: -9px; }
 
   .float_right_full {
-    width: 100% !important;
-    float: none !important;
+    width: 100%;
+    float: none;
     padding-left: 0 !important;
-    margin-left: 0 !important; }
+    margin-left: 0; }
 
   .hero_wrap h1 {
-    font-size: 1.7em !important;
-    padding-top: 110px !important; }
+    padding-top: 110px; }
 
   h2 {
     font-size: 1.6em; }
 
   p {
     font-size: 1em;
-    line-height: 1.7em; } }
+    line-height: 1.7em; }
+
+  .footer_wrap {
+    margin-top: 90px !important; }
+
+  .nav_info {
+    display: none; }
+
+  .home_project_outer {
+    height: 245px !important; } }
 /* ============================================ */
 /*                    Navbar                    */
 /* ============================================ */
@@ -2202,6 +2273,18 @@ p {
   .navbar-toggle .icon-bar {
     background: #000; }
 
+.nav_info {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 15px 15px 40px 15px;
+  color: #3F99B6; }
+  .nav_info h3 {
+    line-height: 1em;
+    margin-bottom: -5px; }
+  .nav_info h4 {
+    margin-bottom: -20px; }
+
 /* ============================================ */
 /*                    Footer                    */
 /* ============================================ */
@@ -2212,29 +2295,36 @@ p {
   margin-left: auto;
   margin-right: auto;
   padding: 0 0 50px 0;
+  margin-top: 200px;
   text-align: center; }
   .footer_wrap::after {
     clear: both;
     content: "";
     display: block; }
 
-.footer_svg {
-  position: relative;
-  margin-bottom: 19px;
-  transition: 0.24s ease-out; }
-
 .footer_wrap .col-md-3 {
-  padding: 45px 0 45px 0;
-  background: rgba(0, 0, 0, 0.1);
-  transition: 0.2s ease all;
-  -webkit-transition: 0.2s ease all;
-  -moz-transition: 0.2s ease all;
-  -o-transition: 0.2s ease all; }
-.footer_wrap .col-md-3:hover {
-  background: rgba(0, 0, 0, 0.16); }
+  padding: 0 3px 0 3px;
+  margin: -45px 0 0 0; }
+  .footer_wrap .col-md-3 .col-md-12 {
+    background: rgba(0, 0, 0, 0.1);
+    transition: 0.2s ease all;
+    padding: 56px 0 32px 0;
+    -webkit-transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -o-transition: 0.2s ease all; }
+    .footer_wrap .col-md-3 .col-md-12 .footer_info_link {
+      position: absolute;
+      background: #999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 45px;
+      line-height: 45px; }
+  .footer_wrap .col-md-3 .col-md-12:hover {
+    background: rgba(0, 0, 0, 0.16); }
 
 .footer_info_link {
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   text-transform: initial; }
@@ -2252,11 +2342,134 @@ p {
   font-size: 0.8em;
   top: 40px; }
 
-.info_border_1,
-.info_border_2,
-.info_border_3 {
-  border-right: 3px solid #ccc; }
+/* ============================================ */
+/*              Home: Hero Section              */
+/* ============================================ */
+.hero_wrap {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: #3F99B6;
+  top: -23px; }
 
+.hero_wrap h1 {
+  text-align: center;
+  position: relative;
+  padding-top: 150px;
+  color: #e9e9e9;
+  font-size: 2.5em; }
+
+/* ============================================ */
+/*             Home: Project Tiles              */
+/* ============================================ */
+/* home project tiles: bg image base */
+.home_project_outer {
+  height: 275px;
+  max-width: 1600px;
+  background: #ccc;
+  padding: 0;
+  margin-bottom: 6px;
+  cursor: pointer; }
+
+/* home project tiles: bg image overlay on hover */
+ * .overlay_tint_white
+ * 	position: absolute
+ * 	width: 100%
+ * 	height: 100%
+ * 	background: #fff
+ * 	opacity: 0
+ * 	transition: 0.4s ease all
+ * 	-webkit-transition: 0.4s ease all
+ * 	-moz-transition: 0.4s ease all
+ * 	-o-transition: 0.4s ease all */
+/* home project tiles: bg image hover */
+.home_project_outer:hover {
+  cursor: pointer; }
+  .home_project_outer:hover .home_project_title_card {
+    width: 38%;
+    cursor: pointer; }
+  .home_project_outer:hover .overlay_tint_white {
+    opacity: 0.3; }
+  .home_project_outer:hover .view_project {
+    opacity: 1;
+    bottom: 55px;
+    transition: 0.3s ease all;
+    -webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all; }
+  .home_project_outer:hover .project_title {
+    margin-left: 0; }
+    .home_project_outer:hover .project_title:before {
+      content: ">";
+      opacity: 1;
+      font-size: 1em;
+      padding-right: 5px; }
+
+/* home project tiles: bg image on click */
+.home_project_outer:active .overlay_tint_white {
+  opacity: 0.65; }
+
+/* home project tiles: title card base */
+.home_project_title_card {
+  height: 100%;
+  width: 33.33333%;
+  background: #999;
+  transition: 0.3s ease all;
+  -webkit-transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all; }
+
+/* home project tiles: title card hover */
+.home_project_title_card:hover {
+  width: 38%;
+  cursor: pointer; }
+  .home_project_title_card:hover .view_project {
+    opacity: 1;
+    bottom: 55px;
+    transition: 0.3s ease all;
+    -webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all; }
+  .home_project_title_card:hover .project_title {
+    margin-left: 0; }
+    .home_project_title_card:hover .project_title:before {
+      content: ">";
+      opacity: 1;
+      font-size: 1em;
+      padding-right: 5px; }
+
+/* home project tiles: title of project */
+.project_title {
+  line-height: 300px;
+  margin-left: -10px;
+  transition: 0.3s ease all;
+  -webkit-transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all; }
+  .project_title:before {
+    content: ">";
+    opacity: 0;
+    font-size: 0.3em;
+    padding-right: 5px;
+    transition: 0.3s ease all;
+    -webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all; }
+
+/* home project tiles: view project span */
+.view_project {
+  position: absolute;
+  z-index: 9999;
+  bottom: 50px;
+  opacity: 0;
+  transition: 0.24s ease-out;
+  -webkit-transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all; }
+
+/* ============================================ */
+/*              Home: Hero Section              */
+/* ============================================ */
 .hero_wrap {
   position: relative;
   height: 100vh;

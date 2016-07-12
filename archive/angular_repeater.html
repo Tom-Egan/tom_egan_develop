@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- associate myApp module with ng-app directive -->
+<html ng-app="myModule">
+
+<head>
+	<title>Angular Test</title>
+
+	<!-- AngularJS Core Module -->
+	<script src="scripts/angular.min.js"></script>
+	<!-- AngularJS Routing Module -->
+	<script src="scripts/angular-route.min.js"></script>
+	<!-- Reference Angular script file -->
+	<script src="scripts/script.js"></script>
+
+</head>
+<body>
+	<!-- invoke controller (calling a method) -->
+	<div ng-controller="myController">
+
+		<table>
+			<thead>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Gender</th>
+					<th>Salary</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<!-- for each employee object... -->
+				<!-- in [employee] model -->
+				<!-- can name [employee] variable anything -->
+				<tr ng-repeat="employee in employees">
+					<td>{{ employee.firstName }}</td>
+					<td>{{ employee.lastName }}</td>
+					<td>{{ employee.gender }}</td>
+					<td>{{ employee.salary }}</td>
+				</tr>
+			</tbody>
+
+		</table>
+
+		<!-- nesting ng-repeat -->
+		<ul>
+			<li ng-repeat="country in countries">
+				{{country.name}}
+				<ul>
+					<!-- for each city object in country.cities -->
+					<li ng-repeat="city in country.cities">
+						{{ city.name }}
+					</li>
+				</ul>
+			</li>	
+		</ul>
+
+	</div>
+
+</body>
+</html>

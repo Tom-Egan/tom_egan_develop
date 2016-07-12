@@ -1,0 +1,19 @@
+Parkit
+---
+
+URL: https://parkit.io
+
+Project path: work/parkit
+
+Role: Web Developer
+
+Company Background: ParkIT, a Houston-based startup and winner of the 2016 International Parking Institute Park Tank, uses computer vision technology to improve the parking experience and make parking management more efficient.  Through an intuative UI, API, and patent-pending computer vision system, ParkIT provides real-time parking data to parking operators.  Their software can work with parking lots using existing IP cameras, as well as those that require new cameras.
+
+Project Overview: As a cohort of the Jaguar Land Rover Tech Incubator in Portland, Oregon, ParkIT was in need of upgrading their current website build.  My primary task for this project consisted of converting their static website into a responsive one.  Building off of their exisiting AngularJS framework, I integrated a lightweight and bespoke version of Bootstrap for the responsive groundwork, minified to 4.9kb.  A custom MVC controller was implemented in order to modify the Bootstrap navigation so that it could be integrated with AngularJS, without jQuery.  After refactoring most of the front-end, the total amount of CSS was cut to 11.1kb, and unused CSS rules was reduced from over 2300 to zero.
+
+Technologies:
+- Git
+- BitBucket
+- AngularJS
+- Bootstrap
+- Grunt

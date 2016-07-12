@@ -11,35 +11,43 @@
 @media only screen and (max-width: 1400px)
 	.col-md-3
 		width: 50%
-	.col-md-3 svg
-		margin-top: 15px
-	.info_border_2
-		border-right: 0 !important
-		border-bottom: 3px solid #ccc
-	.info_border_1
-		border-bottom: 3px solid #ccc
+	.footer_wrap
+		.row2_margin
+			margin: 6px 0 0 0 !important
 	.hero_wrap h1
 		font-size: 2em !important
+	.home_project_outer
+		height: 260px !important
+	.home_project_outer:hover
+		.home_project_title_card
+			width: 44% !important
+			cursor: pointer
+	.home_project_title_card
+		width: 40% !important
+	.home_project_title_card:hover
+		width: 44% !important
 
 @media only screen and (max-width: 1000px)
 	.col-md-3
 		width: 100%
-
 	.footer_wrap
+		margin-top: 140px!important
 		.col-md-3
-			padding: 25px 0 30px !important
-
+			padding: 16px 0 0 0 !important
+			margin: 0!important
 	.hero_wrap h1
-		font-size: 1.8em !important
+		font-size: 1.65em !important
 
 @media only screen and (max-width: 992px)
-	.info_border_1,
-	.info_border_2,
-	.info_border_3
-		border-right: 0 !important
-		border-bottom: 3px solid #ccc
-
-
+	.home_project_outer
+		height: 240px !important
+	.home_project_title_card,
+	.home_project_title_card:hover
+		width: 100% !important
+	.home_project_outer:hover
+		.home_project_title_card
+			width: 100% !important
+			cursor: pointer
 
 @media only screen and (max-width: 768px)
 	.navbar-left
@@ -50,24 +58,23 @@
 			a
 				background: red
 			a:hover
-				background: white!important
+				background: white
 	.tegan_nav
 		height: 60px !important
 		width: 100% !important
 
 	.navbar-collapse
-		margin-top: -1px !important
+		margin-top: -1px
 		margin-bottom: -9px
 
 	.float_right_full
-		width: 100% !important
-		float: none !important
+		width: 100%
+		float: none
 		padding-left: 0 !important
-		margin-left: 0 !Important
+		margin-left: 0
 
 	.hero_wrap h1
-		font-size: 1.7em !important
-		padding-top: 110px !important
+		padding-top: 110px
 
 	h2
 		font-size: 1.6em
@@ -75,5 +82,11 @@
 	p
 		font-size: 1em
 		line-height: 1.7em
+	.footer_wrap
+		margin-top: 90px!important
+	.nav_info
+		display: none
+	.home_project_outer
+		height: 245px !important
 
 
