@@ -4,14 +4,18 @@
 	<title>Tom Egan Dev</title>
 	<!-- CSS: Bootstrap -->
 <!-- 	<link rel="stylesheet" href="css/custom_bootstrap.css">
- -->	<!-- CSS: Main -->
+ -->	
+
+ 	<!-- CSS: Main -->
 	<link rel="stylesheet" href="css/main.css">
+	<!-- Angular -->
+	<script src="js/angular.min.js"></script>
 	<!-- Noto Sans: Body -->
 	<link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
 	<!-- Rubik: Titles -->
 	<link href='https://fonts.googleapis.com/css?family=Rubik:400,300,500,700' rel='stylesheet' type='text/css'>
 </head>
-<body>
+<body ng-app>
 
 <!-- Navbar -->
 <div class="navbar navbar-fixed-top tegan_nav">
@@ -47,6 +51,12 @@
             <li><a href="contact">Contact</a></li>
         </ul><!--/ end ul -->
     </div><!--/ end navbar items -->
+
+    <div class="nav_info">
+    	<h3>Graphics Developer</h3>
+    	<h4>Jaguar Land Rover</h4>
+    	<h4>Portland, OR</h4>
+    </div>
 </div><!--/ end navbar wrapper -->
 
 <!-- float right wrapper for vertical nav -->
@@ -75,30 +85,15 @@
 		<div class="col-md-6"></div>
 	</div> <!-- end of [content_wrap] -->
 
-	<!-- start diciplines section -->
-	<div class="content_wrap">
-		<!-- diciplines -->
-		<div class="col-md-4 white_grid">
-			<h2>Diciplines</h2>
-		</div>
-
-		<div class="col-md-8 color_grid">
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-		</div>
-	</div> <!-- end of [content_wrap] -->
-
 	<!-- start work section -->
 	<div class="content_wrap">
 		<!-- work title -->
 		<div class="col-md-12">
 			<h2>Recent Work</h2>
+
+			<div class="btn_primary btn_right">
+				<a href="">View More</a>
+			</div>
 		</div>
 
 		<!-- project 1: outer wrap -->
@@ -107,6 +102,8 @@
 			<div class="overlay_tint_white"></div>
 			<!-- project 1: title card -->
 			<div class="col-md-4 home_project_title_card">
+				<h3 class="project_title">Workfrom</h3>
+				<span class="view_project">View Project</span>
 			</div>
 		</div> <!-- end of outer wrap -->
 
@@ -116,6 +113,8 @@
 			<div class="overlay_tint_white"></div>
 			<!-- project 1: title card -->
 			<div class="col-md-4 home_project_title_card">
+				<h3 class="project_title">ParkIT</h3>
+				<span class="view_project">View Project</span>
 			</div>
 		</div> <!-- end of outer wrap -->
 
@@ -125,6 +124,8 @@
 			<div class="overlay_tint_white"></div>
 			<!-- project 1: title card -->
 			<div class="col-md-4 home_project_title_card">
+				<h3 class="project_title">AMR</h3>
+				<span class="view_project">View Project</span>
 			</div>
 		</div> <!-- end of outer wrap -->
 
@@ -134,6 +135,8 @@
 			<div class="overlay_tint_white"></div>
 			<!-- project 1: title card -->
 			<div class="col-md-4 home_project_title_card">
+				<h3 class="project_title">Formula 1 Launch</h3>
+				<span class="view_project">View Project</span>
 			</div>
 		</div> <!-- end of outer wrap -->
 
