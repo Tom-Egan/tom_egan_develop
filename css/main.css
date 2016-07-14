@@ -2329,6 +2329,8 @@ p {
   font-size: 1.2em;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
+  top: -16px !important;
+  position: realtive;
   text-transform: initial; }
 
 .footer__social {
