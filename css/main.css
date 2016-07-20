@@ -2541,12 +2541,13 @@ p {
   width: 100%;
   background: #233236;
   opacity: 0.5;
-  text-align: center; }
+  text-align: center;
+  padding-top: 100px; }
   .dark_overlay h2 {
     font-size: 2.2em;
     color: #eee;
     z-index: 2;
-    margin-top: 100px;
+    margin-top: 0px;
     margin-bottom: -20px;
     line-height: 1em; }
   .dark_overlay h3 {
