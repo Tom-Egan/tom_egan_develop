@@ -2015,7 +2015,7 @@ a {
 
 h2 {
   font-size: 1.9em;
-  margin-bottom: 40px; }
+  margin-bottom: 20px; }
 
 h3 {
   font-size: 1.35em; }
@@ -2037,7 +2037,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   padding: 0;
-  margin-bottom: 100px; }
+  margin-bottom: 75px; }
   .content_wrap::after {
     clear: both;
     content: "";
@@ -2215,7 +2215,11 @@ p {
     display: none; }
 
   .home_project_outer {
-    height: 245px !important; } }
+    height: 245px !important; }
+
+  .circle_mask {
+    height: 150px !important;
+    width: 150px !important; } }
 /* ============================================ */
 /*                    Navbar                    */
 /* ============================================ */
@@ -2521,6 +2525,58 @@ p {
   -webkit-transition: 0.3s ease all;
   -moz-transition: 0.3s ease all;
   -o-transition: 0.3s ease all; }
+
+.subpage_bg {
+  position: relative;
+  background-position: center center;
+  width: 100%;
+  height: 265px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  margin-bottom: 40px; }
+
+.dark_overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #233236;
+  opacity: 0.5;
+  text-align: center; }
+  .dark_overlay h2 {
+    font-size: 2.2em;
+    color: #eee;
+    z-index: 2;
+    margin-top: 100px;
+    margin-bottom: -20px;
+    line-height: 1em; }
+  .dark_overlay h3 {
+    color: #999; }
+
+.about_bg {
+  position: relative;
+  background: url("../img/xk.jpg") no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center; }
+
+.circle_mask {
+  height: 180px;
+  width: 180px;
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border: 5px solid #fff;
+  margin: -100px auto 20px auto; }
+
+.tegan_headshot {
+  background: url(../img/tom_egan_headshot.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
 
 /* ============================================ */
 /*              Home: Hero Section              */
